@@ -188,34 +188,34 @@ public class Main {
         System.out.print("Cantidad a comprar: ");
         int cantidad = scanner.nextInt();
 
-        int precioUnit = 0;
+        int precioUnidad = 0;
 
         switch (prenda)
         {
             case "camisa":
-                precioUnit = 30000;
+                precioUnidad = 30000;
                 break;
 
             case "pantalon":
-                precioUnit = 50000;
+                precioUnidad = 50000;
                 break;
 
             case "chaqueta":
-                precioUnit = 80000;
+                precioUnidad = 80000;
                 break;
 
             default:
-                System.out.println("Prenda no valida.");
+                System.out.println("Prenda sin existencias actualmente.");
                 return;
         }
 
-        double total = precioUnit * cantidad;
+        double total = precioUnidad * cantidad;
 
         if (cantidad > 5)
         {
             total = total - (total * 0.15);
         }
 
-        System.out.println("Total final a pagar: " + total);
+        System.out.println("Total a pagar: " + total);
     }
 }
